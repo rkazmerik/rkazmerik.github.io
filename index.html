@@ -1,3 +1,129 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<h1>CP 600</h1>
+<div class="jumbotron">
+  <div class="container">
+  <h1>CP600</h1>
+  <p>Travelling Salesperson Problem (TSP)</p>
+  <p><a class="btn btn-primary btn-lg" href="https://simple.wikipedia.org/wiki/Travelling_salesman_problem" role="button">Learn more</a></p>
+  </div>
+</div>
+
+<div class="container">
+  <h2>TSP describes a salesman who must visit N cities. <br/><br/>
+    He/she does not
+    care the order or direction, as long as he visits each city and finishes
+    in the city where he started.
+  </h2>
+</div>
+
+<img style="margin: 30 0 0 100px;" width="400" src='http://mediad.publicbroadcasting.net/p/kajx/files/styles/medium/public/201308/TSP_0.jpg' />
+
+<div class="container">
+  <h2>As we can see, TSP is commonly represented as a graph.<br/><br/>
+    More specifically each edge is assigned a weight. Therefore it is
+    a complete weighted graph. <br/><br/>
+    Edge weighting could be representative of many factors:<br/><br/>
+
+  <ul>
+    <li>Length of edge</li>
+    <li>Time required to travel edge</li>
+    <li>Cost of traveling edge</li>
+
+  </ul>
+  </h2>
+</div>
+<br/>
+
+<div class="jumbotron">
+    <div class="container">
+    <h1>Complexity</h1>
+    <p>How hard is the TSP to solve?</p>
+    <p><a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=YX40hbAHx3s" role="button">Learn more</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+      <h2>TSP is classified as an NP-hard problem. <br/><br/>
+        If the problem is broken into smaller pieces, the components
+        will be at least as complex as the original one. <br/><br/>
+      </h2>
+    </div>
+
+  <img style="margin: 30 0 0 100px;" width="400" src='https://i.stack.imgur.com/k8GGs.png' />
+  <br/><br/>
+
+  <div class="container">
+    <h2>The resolution of the TSP would settle the P versus NP problem and 
+      earn a $1,000,000 prize from the Clay Mathematics Institute.
+    </h2>
+  </div>
+  <br/>
+
+  <div class="jumbotron">
+      <div class="container">
+      <h1>Solutions</h1>
+      <p>How can we solve TSP?</p>
+      <p><a class="btn btn-primary btn-lg" href="http://www.math.uwaterloo.ca/tsp/problem/pcb3cnt.html" role="button">Learn more</a></p>
+      </div>
+    </div>
+  
+    <div class="container">
+        <h2>TSP can be solved by trying every possible solution (brute force).
+          This is the easiest, but most expensive solution. <br/><br/>
+        </h2>
+
+        <img src='http://www.mathatube.com/images/factorials.JPG' />
+        <br/><br/>
+
+        <h2>For N cities we have (N-1) factorial possibilities.</h2>
+      </div>
+      <br/>
+
+      <div class="jumbotron">
+          <div class="container">
+          <h1>Other Solutions</h1>
+          <p>What about nearest neighbour?</p>
+          <p><a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=SC5CX8drAtU" role="button">Learn more</a></p>
+          </div>
+        </div>
+
+        <div class="container">
+        <h2>TSP can be solved by a greedy algorithm. Start at one point
+          and always choose the next nearest point. <br/><br/>
+          </h2>
+
+          <iframe width="760" height="500" src="https://www.youtube.com/embed/SC5CX8drAtU?start=10&end=21" frameborder="0" allowfullscreen></iframe>
+
+          <h2>As we can see... doesn't always prevent crossing paths. <br/><br/>
+              </h2>
+
+          </div>
+
+          <div class="jumbotron">
+              <div class="container">
+              <h1>Other Solutions</h1>
+              <p>What about nearest heuristics?</p>
+              <p><a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=SC5CX8drAtU" role="button">Learn more</a></p>
+              </div>
+            </div>
+    
+            <div class="container">
+            <h2>We can also guess a random path, and keep swapping as long
+              as the total length decreases. <br/><br/>
+              </h2>
+    
+              <iframe width="760" height="500" src="https://www.youtube.com/embed/SC5CX8drAtU?start=39&end=85" frameborder="0" allowfullscreen></iframe>
+    
+              <h2>However, this doesn't always produce an optimal solution. <br/><br/>
+                  </h2>
+    
+              </div>
+
+              <div class="jumbotron">
+                  <div class="container">
+                  <h1>More Solutions</h1>
+                    <p>This one looks interesting</p>
+                  <p><a class="btn btn-primary btn-lg" href="http://www.math.uwaterloo.ca/tsp/methods/dfj/index.html" role="button">Learn more</a></p>
+                  </div>
+                </div>
+              
